@@ -1,0 +1,179 @@
+body{
+    background: linear-gradient(to right,#fc5c7d,#6a82fb);
+    box-sizing: border-box;
+}
+
+.todo{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+max-width: 300px;
+width: 100%;
+
+
+}
+
+.todo_header .title{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.todo_add{
+    position: relative;
+}
+
+
+.todo_add form input{
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px #494949;
+}
+
+.todo_add form input{
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+    background-color: #243763;
+    color: #fff;
+    outline: none;
+   
+}
+
+.todo_add form input[type="text"]::placeholder {
+    color: #fff;
+}
+
+
+.todo-body{
+background-color: #243763;
+width: 107%;
+height: 250px;
+box-shadow: 3px 3px 5px #494949;
+
+
+}
+
+.todo-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.todo-list li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #494949;
+    padding: 5px 10px;
+    gap: 5px;
+}
+
+.todo-list li:last-child{
+    border-bottom: none;
+}
+
+.todo-list li label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.todo-list li input[type="text"]{
+    border: none;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+
+.todo-list li input[type="text"]:focus-visible{
+    outline: none;
+}
+
+.todo-list li input[type="text"]:read-only{
+background: transparent;
+color: #fff;
+pointer-events: none;
+}
+
+.todo-list li input[type="checkbox"]{
+    margin: 0;
+    width: 10px;
+    cursor: pointer;
+}
+
+.todo-list li[data-status="completed"] input[type="text"]{
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.todo-list li .actions{
+display: flex;
+column-gap: 5px;
+}
+
+.todo-list li .actions button{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 100%;
+}
+
+
+.todo-list li .actions button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #243763;
+    width: 107.3%;
+    box-shadow: 3px 3px 5px #494949;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.footer .clear-all{
+    cursor: pointer;
+}
+
+
+#pending{
+    width: 100%;
+    padding: 0;
+    background-color: none;
+}
+
+#pending label input{
+    background-color: transparent;
+    color: #aaa;
+}
+
+.edit{
+    background-color: white !important;
+ 
+    
+}
+
+.checked{
+    text-decoration: line-through;
+}
